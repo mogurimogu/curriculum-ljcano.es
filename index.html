@@ -9,7 +9,9 @@
     <title>Web Designer - Luis Javier Cano Benítez</title>
     <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/icomoon.css">
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/sprite.css">
     <script src="./assets/js/jquery-3.3.1.min.js"></script>
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -96,7 +98,8 @@
                 <h1 class="text-uppercase"><span class="detalle">&#60;</span> Luis Javier Cano Benítez<span class="detalle"> &#47;&#62;</span></h1>
             </div>
             <div class="my-3">
-                <a href="https://www.linkedin.com/in/ljcano/" class="btn bg-main text-dark mx-2" download><span class="material-icons-outlined">contact_page</span> Contacto</a>    
+                <a href="https://www.linkedin.com/in/ljcano/" class="btn bg-main text-dark mx-2" download><i class="fab fa-linkedin-in"></i> linkedin</a>    
+                <a href="https://www.linkedin.com/in/ljcano/" class="btn bg-main text-dark mx-2" download><i class="fab fa-github"></i> Github</a>    
             </div>
         </div>
         <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
@@ -173,6 +176,16 @@
             <div class="gap"></div>
             <div class="container text-light">
                 <div class="row">
+                    <div class="col-lg-12">
+                        <div class="container tag" data-toggle="modal" data-target="#fbootcampfsw">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-2 year">2021</div>
+                                <div class="col-md-10">
+                                    <h4>Keepcoding - Fullstack Web Bootcamp</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-lg-6">
                         <div class="container tag" data-toggle="modal" data-target="#fweb">
                             <div class="row d-flex align-items-center">
@@ -306,21 +319,21 @@
             <div class="container">
                 <div class="row text-center text-light">
                     <div class="col-lg-4 col-sm-4 skills" data-toggle="tooltip" data-placement="bottom" title="Nativo">
-                        <div class="bg-espanol mx-auto"></div>
+                        <span class="icon icon-spanish"></span>
                         <h4>Castellano</h4>
                         <div class="progress">
                             <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-4 skills" data-toggle="tooltip" data-placement="bottom" title="Nivel medio hablado y escrito">
-                        <div class="bg-ingles mx-auto"></div>
+                        <span class="icon icon-english"></span>
                         <h4>Inglés</h4>
                         <div class="progress">
                             <div class="progress-bar bg-main" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                         </div>
                     </div>
                     <div class="col-lg-4 col-sm-4 skills" data-toggle="tooltip" data-placement="bottom" title="Entiendo conversaciones">
-                        <div class="bg-catalan mx-auto"></div>
+                        <span class="icon icon-catalonian"></span>
                         <h4>Catalán</h4>
                         <div class="progress">
                             <div class="progress-bar bg-main" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
@@ -328,33 +341,33 @@
                     </div>
                 </div>
                 <div class="gap"></div>
-                <div class="jumbotron bg-dark text-center text-light">
+                <div class="jumbotron bg-skills text-center text-dark">
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
-                            <div class="bg-ps mx-auto"></div>
-                            <h4>Photoshop</h4>
+                            <span class="icon icon-html-5"></span>
+                            <h4>HTML5</h4>
                             <div class="progress">
                                 <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
-                            <div class="bg-ai mx-auto"></div>
-                            <h4>Illustrator</h4>
+                            <span class="icon icon-css-3"></span>
+                            <h4>CSS3</h4>
                             <div class="progress">
                                 <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
 
                         </div>
                         <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Avanzado">
-                            <div class="bg-id mx-auto"></div>
-                            <h4>Indesign</h4>
+                            <span class="icon icon-sass"></span>
+                            <h4>SASS</h4>
                             <div class="progress">
                                 <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Intermedio">
-                        <div class="bg-dw mx-auto"></div>
-                            <h4>Dreamweaver</h4>
+                            <span class="icon icon-javascript"></span>
+                            <h4>Javascript</h4>
                             <div class="progress">
                                 <div class="progress-bar bg-main" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
@@ -362,92 +375,92 @@
                     </div>
                     <div class="row">
                         <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
-                            <div class="bg-html mx-auto"></div>
-                            <h4>HTML</h4>
+                            <span class="icon icon-photoshop"></span>
+                            <h4>Photoshop</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
+                            <span class="icon icon-illustrator"></span>
+                            <h4>Illustrator</h4>
                             <div class="progress">
                                 <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
-                            <div class="bg-css mx-auto"></div>
-                            <h4>CSS</h4>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Avanzado">
+                            <span class="icon icon-indesign"></span>
+                            <h4>Indesign</h4>
                             <div class="progress">
-                                <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Básico">
-                            <div class="bg-amp mx-auto"></div>
-                            <h4>AMP</h4>
-                            <div class="progress">
-                                <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                            </div>
-                        </div>
-                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
-                            <div class="bg-bootstrap mx-auto"></div>
-                            <h4>Bootstrap</h4>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="avanzado">
+                            <span class="icon icon-ux-design"></span>
+                            <h4>User Experience</h4>
                             <div class="progress">
                                 <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                     </div>
                     <div class="collapse" id="skillsextra">
-
                         <div class="row">
-                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Básico">
-                                <div class="bg-jquery mx-auto"></div>
-                                <h4>JQuery</h4>
-                                <div class="progress">
-                                    <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                </div>
-                            </div>
-
                             <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Avanzado">
-                                <div class="bg-wordpress mx-auto"></div>
-                                <h4>Wordpress</h4>
+                                <span class="icon icon-github"></span>
+                                <h4>Github</h4>
                                 <div class="progress">
-                                    <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 80%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Básico">
-                                <div class="bg-seo mx-auto"></div>
-                                <h4>SEO</h4>
+                                <span class="icon icon-nodejs"></span>
+                                <h4>Node</h4>
                                 <div class="progress">
                                     <div class="progress-bar bg-main" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
                             <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Intermedio">
-                                <div class="bg-mailing mx-auto"></div>
-                                <h4>Mailing</h4>
+                                <span class="icon icon-amp"></span>
+                                <h4>Google AMP</h4>
                                 <div class="progress">
-                                    <div class="progress-bar bg-main" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 50%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Avanzado">
-                                <div class="bg-office mx-auto"></div>
-                                <h4>Office</h4>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Intermedio">
+                                <span class="icon icon-wordpress"></span>
+                                <h4>Wordpress</h4>
                                 <div class="progress">
                                     <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Intermedio">
+                                <span class="icon icon-jquery"></span>
+                                <h4>jQuery</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
                             <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Técnico de reparación de equipos informáticos">
-                                <div class="bg-reparaciones mx-auto"></div>
+                                <span class="icon icon-it"></span>
                                 <h4>IT Informático</h4>
                                 <div class="progress">
                                     <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Permiso B">
-                                <div class="bg-carnetb mx-auto"></div>
-                                <h4>Permiso conducir</h4>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Intermedio">
+                                <span class="icon icon-seo"></span>
+                                <h4>SEO</h4>
                                 <div class="progress">
-                                    <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
                             </div>
-                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Todas y más!">
-                                <div class="bg-mas mx-auto"></div>
-                                <h4>Ganas de aprender</h4>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Siempre positiva">
+                                <span class="icon icon-more"></span>
+                                <h4>Actitud</h4>
                                 <div class="progress">
                                     <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                                 </div>
@@ -484,6 +497,40 @@
             </div>
         </div>
         <!--Zona Modal Formación...................................................-->
+        <div class="modal fade" id="fbootcampfsw" tabindex="-1" role="dialog" aria-labelledby="weblabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="weblabel">Keepcoding - Fullstack Web Bootcamp</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Formación enfocada en todas las disciplinas que intervienen hoy en día en cualquier proyecto relacionado conweb e internet: Front-end, Back-end y servidores.</p>
+                        <ul>
+                            <li>#Git</li>
+                            <li>#HTML5</li>
+                            <li>#CSS3</li>
+                            <li>#JavaScript</li>
+                            <li>#TDD</li>
+                            <li>#Node.js</li>
+                            <li>#Express</li>
+                            <li>#MongoDB</li>
+                            <li>#SASS </li>
+                            <li>#React</li>
+                            <li>#Redux</li>
+                            <li>#DevOps</li>
+                            <li>#AWS</li>
+                            <li>#Docker</li>
+                            <li>#SEO</li>
+                            <li>#UX</li>
+                            <li>#FullStack</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <div class="modal fade" id="fweb" tabindex="-1" role="dialog" aria-labelledby="weblabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content bg-dark text-light">
@@ -757,7 +804,6 @@
             Web creada por Luis Javier Cano Benítez &copy; 2018
         </div>
     </footer>
-
 </body>
 
 </html>

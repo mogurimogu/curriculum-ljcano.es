@@ -1,0 +1,101 @@
+.icon {
+  display: inline-block;
+  background-repeat: no-repeat;
+  background-image: url(../img/sprite.svg);
+}
+.icon-catalonian {
+  width: 70px;
+  height: 70px;
+  background-position: 0 0;
+}
+.icon-spanish {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -70px;
+}
+.icon-english {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -140px;
+}
+.icon-it {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -210px;
+}
+.icon-seo {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -280px;
+}
+.icon-more {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -350px;
+}
+.icon-photoshop {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -420px;
+}
+.icon-illustrator {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -490px;
+}
+.icon-indesign {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -560px;
+}
+.icon-wordpress {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -630px;
+}
+.icon-amp {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -700px;
+}
+.icon-jquery {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -770px;
+}
+.icon-javascript {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -840px;
+}
+.icon-nodejs {
+  width: 64px;
+  height: 70px;
+  background-position: 0 -910px;
+}
+.icon-sass {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -980px;
+}
+.icon-html-5 {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -1050px;
+}
+.icon-css-3 {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -1120px;
+}
+.icon-ux-design {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -1190px;
+}
+.icon-github {
+  width: 70px;
+  height: 70px;
+  background-position: 0 -1260px;
+}
+

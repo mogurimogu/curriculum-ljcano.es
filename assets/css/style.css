@@ -5,7 +5,7 @@
  /*
 
 font-family: 'Titillium Web', sans-serif;
-
+ 
 font-family: 'Source Sans Pro', sans-serif;
 
 */
@@ -674,97 +674,6 @@ li{
 
 }
 
-
-.bg-ai {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -131px -250px;
-}
-
-.bg-html {
-    width: 101px; height: 100px;
-    background: url('../img/css_sprites.png') -10px -10px;
-}
-
-.bg-ps {
-    width: 101px; height: 100px;
-    background: url('../img/css_sprites.png') -131px -10px;
-}
-
-.bg-espanol {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -251px -250px;
-}
-
-.bg-catalan {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -373px -10px;
-}
-
-.bg-seo {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -373px -130px;
-}
-
-.bg-bootstrap {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -373px -250px;
-}
-
-.bg-id {
-    width: 101px; height: 100px;
-    background: url('../img/css_sprites.png') -10px -130px;
-}
-
-.bg-carnetb {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -10px -370px;
-}
-
-.bg-mas {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -130px -370px;
-}
-
-.bg-ingles {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -250px -370px;
-}
-
-.bg-wordpress {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -370px -370px;
-}
-
-.bg-jquery {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -493px -10px;
-}
-
-.bg-office {
-    width: 101px; height: 100px;
-    background: url('../img/css_sprites.png') -131px -130px;
-}
-
-.bg-css {
-    width: 101px; height: 100px;
-    background: url('../img/css_sprites.png') -252px -10px;
-}
-
-.bg-dw {
-    width: 101px; height: 100px;
-    background: url('../img/css_sprites.png') -252px -130px;
-}
-
-.bg-reparaciones {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -493px -130px;
-}
-
-.bg-mailing {
-    width: 101px; height: 100px;
-    background: url('../img/css_sprites.png') -10px -250px;
-}
-.bg-amp {
-    width: 100px; height: 100px;
-    background: url('../img/css_sprites.png') -493px -250px;
+.bg-skills{
+    background-color: #ffffca;
 }

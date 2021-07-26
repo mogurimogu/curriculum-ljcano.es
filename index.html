@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Diseñador gráfico y web profesional, habil, con gran capacidad de aprendizaje y una gran elección">
+    <meta name="theme-color" content="#111217">
+    <title>Web Designer - Luis Javier Cano Benítez</title>
+    <link rel="icon" href="./assets/img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/jquery-3.3.1.min.js"></script>
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-116872624-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-116872624-1');
+
+    </script>
+    <script>
+        $(document).ready(function() {
+            // Add scrollspy to <body>
+            $('body').scrollspy({
+                target: ".navbar",
+                offset: 50
+            });
+
+            // Add smooth scrolling on all links inside the navbar
+            $("#myNavbar a").on('click', function(event) {
+                // Make sure this.hash has a value before overriding default behavior
+                if (this.hash !== "") {
+                    // Prevent default anchor click behavior
+                    event.preventDefault();
+
+                    // Store hash
+                    var hash = this.hash;
+
+                    // Using jQuery's animate() method to add smooth page scroll
+                    // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                    });
+                } // End if
+            });
+        });
+
+    </script>
+    <script>
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+
+    </script>
+    <script>
+        //SCRIPT PARA NAV STICKY
+        $(document).ready(function() {
+            var stickyNavTop = $('nav').offset().top;
+            var stickyNav = function() {
+                var scrollTop = $(window).scrollTop(); // our current vertical position from the top
+                // if we've scrolled more than the navigation, change its position to fixed to stick to top,
+                // otherwise change it back to relative
+                if (scrollTop > stickyNavTop) {
+                    $('nav').addClass('fixed-top');
+                } else {
+                    $('nav').removeClass('fixed-top');
+                }
+            };
+            stickyNav();
+            // and run it again every time you scroll
+            $(window).scroll(function() {
+                stickyNav();
+            });
+        });
+
+    </script>
+    <script src="https://kit.fontawesome.com/e3338526da.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <div class="position-absolute banner-overlay banner-top d-flex align-items-center align-content-center justify-content-center flex-column text-light">
+            <img src="./assets/img/ljcb-logo-v2-01.png" class="logo" alt="Luis Javier Cano Benítez Diseñador web & gráfico">
+            <div class="info-extra text-center">
+                <h1 class="text-uppercase"><span class="detalle">&#60;</span> Luis Javier Cano Benítez<span class="detalle"> &#47;&#62;</span></h1>
+            </div>
+            <div class="my-3">
+                <a href="https://www.linkedin.com/in/ljcano/" class="btn bg-main text-dark mx-2" download><span class="material-icons-outlined">contact_page</span> Contacto</a>    
+            </div>
+        </div>
+        <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner" role="listbox">
+                <div class="carousel-item active carousel-1 parallax banner-top">
+                </div>
+                <div class="carousel-item carousel-2 parallax banner-top">
+                </div>
+                <div class="carousel-item carousel-3 parallax banner-top">
+                </div>
+            </div>
+        </div>
+        <!--Menú navegación-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#"><img src="./assets/img/ljcb-logo-simple-01.png" alt="Luis Javier Cano Benítez"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse justify-content-md-end text-sm-center" id="navbarNavAltMarkup">
+                    <div class="navbar-nav" id="myNavbar">
+                        <a class="nav-item nav-link" href="#sobre">Sobre Mí</a>
+                        <a class="nav-item nav-link" href="#formacion">Formación</a>
+                        <a class="nav-item nav-link" href="#experiencia">Experiencia</a>
+                        <a class="nav-item nav-link" href="#habilidades">Habilidades e idiomas</a>
+                        <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+                        <a class="nav-item nav-link" href="#contacta">Contacto</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    <main>
+        <div class="gap"></div>
+        <!-- Sobre mi -->
+        <div id="sobre">
+            <div class="container text-light">
+                <div class="row d-flex align-items-center text-center">
+                    <div class="col-md-4 foto"><img src="./assets/img/foto.jpg" class="img-thumbnail rounded-circle" alt="Luis Javier Cano"></div>
+                    <div class="col-md-8">
+                        <q class="d-block">Un Mundo sin Diseño es como un HTML sin CSS</q>
+                    </div>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="container personal-info jumbotron bg-dark text-light">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-3x fa-globe"></i>
+                        <h3>De dónde vengo</h3>
+                        <p>¡Hola! Provengo de Huelva, una provincia de Andalucía. Desde siempre me ha apasionado el diseño y por eso mi sueño es vivir de ello.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-3x fa-male"></i>
+                        <h3>Quién soy</h3>
+                        <p>¡Creatividad a tope! Soy una persona entusiasta, alegre y simpática que no duda en demostrar sus capacidades.</p>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <i class="fas fa-3x fa-bullseye"></i>
+                        <h3>Cuál es mi objetivo</h3>
+                        <p class="mb-0"><strike>¡Conquistar el mundo!</strike></p>
+                        <p class="mb-0">Mi objetivo es desarrollarme como persona y mejorar mis habilidades creativas...</p>
+                        <p>¡Y conquistar el mundo!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="formacion">
+            <div class="background-header flex-column bg1 parallax d-flex justify-content-center align-items-center align-content-center text-light">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fab fa-3x fa-leanpub"></i>
+                    <h2 class="text-uppercase">Formación</h2>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="container text-light">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#fweb">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-2 year">2017</div>
+                                <div class="col-md-10">
+                                    <h4>CP2 - Confección y publicación de páginas webs</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#fandroid">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-2 year">2016</div>
+                                <div class="col-md-10">
+                                    <h4>FC - Cómo crear aplicaciones para móvil</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#fdiseno">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-2 year">2012</div>
+                                <div class="col-md-10">
+                                    <h4>FPO - Diseño gráfico y autoedición</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container tag">
+                            <div class="row d-flex align-items-center" data-toggle="modal" data-target="#fesi">
+                                <div class="col-md-2 year">2011</div>
+                                <div class="col-md-10">
+                                    <h4>FP1 - Explotación de sistemas informáticos</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div id="experiencia">
+            <div class="background-header flex-column bg1 parallax d-flex justify-content-center align-items-center align-content-center text-light">
+                <div class="d-flex flex-row align-items-center">
+                    <i class="fas fa-3x fa-briefcase"></i>
+                    <h2 class="text-uppercase">Experiencia</h2>
+                </div>
+            </div>
+            <div class="gap"></div>
+            <div class="container text-light">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#emhg">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-2 year">2018</div>
+                                <div class="col-md-10">
+                                    <h4>Web Developer & UX Designer</h4>
+                                    <h5>Majestic Hotel group - Barcelona</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#eiwsb">
+                            <div class="row d-flex align-items-center">
+                                <div class="col-md-2 year">2018</div>
+                                <div class="col-md-10">
+                                    <h4>Webmaster</h4>
+                                    <h5>Indian Webs - Sant Boi</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#eiwh">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 year">2017</div>
+                                <div class="col-md-10">
+                                    <h4>Edición de páginas webs</h4>
+                                    <h5>Indian Webs - Hospitalet</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#emineco">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 year">2015</div>
+                                <div class="col-md-10">
+                                    <h4>Gestión de informes</h4>
+                                    <h5>Ministerio de Economía - Madrid</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container tag" data-toggle="modal" data-target="#ediseno">
+                            <div class="row align-items-center">
+                                <div class="col-md-2 year">2012</div>
+                                <div class="col-md-10">
+                                    <h4>Diseñador gráfico</h4>
+                                    <h5>Rotula - Huelva</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="container tag">
+                            <div class="row align-items-center" data-toggle="modal" data-target="#efete">
+                                <div class="col-md-2 year">2011</div>
+                                <div class="col-md-10">
+                                    <h4>Ténico Informático</h4>
+                                    <h5>FETE UGT - Huelva</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div id="habilidades">
+            <div class="text-center section-title text-uppercase d-flex justify-content-center align-items-center"><i class="far fa-3x fa-check-square"></i>
+                <h2 class="d-block">Habilidades e idiomas</h2>
+            </div>
+            <div class="container">
+                <div class="row text-center text-light">
+                    <div class="col-lg-4 col-sm-4 skills" data-toggle="tooltip" data-placement="bottom" title="Nativo">
+                        <div class="bg-espanol mx-auto"></div>
+                        <h4>Castellano</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 skills" data-toggle="tooltip" data-placement="bottom" title="Nivel medio hablado y escrito">
+                        <div class="bg-ingles mx-auto"></div>
+                        <h4>Inglés</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-main" role="progressbar" style="width: 60%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-4 skills" data-toggle="tooltip" data-placement="bottom" title="Entiendo conversaciones">
+                        <div class="bg-catalan mx-auto"></div>
+                        <h4>Catalán</h4>
+                        <div class="progress">
+                            <div class="progress-bar bg-main" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gap"></div>
+                <div class="jumbotron bg-dark text-center text-light">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
+                            <div class="bg-ps mx-auto"></div>
+                            <h4>Photoshop</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
+                            <div class="bg-ai mx-auto"></div>
+                            <h4>Illustrator</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                        </div>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Avanzado">
+                            <div class="bg-id mx-auto"></div>
+                            <h4>Indesign</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Intermedio">
+                        <div class="bg-dw mx-auto"></div>
+                            <h4>Dreamweaver</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
+                            <div class="bg-html mx-auto"></div>
+                            <h4>HTML</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
+                            <div class="bg-css mx-auto"></div>
+                            <h4>CSS</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Básico">
+                            <div class="bg-amp mx-auto"></div>
+                            <h4>AMP</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Experto">
+                            <div class="bg-bootstrap mx-auto"></div>
+                            <h4>Bootstrap</h4>
+                            <div class="progress">
+                                <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="collapse" id="skillsextra">
+
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Básico">
+                                <div class="bg-jquery mx-auto"></div>
+                                <h4>JQuery</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Avanzado">
+                                <div class="bg-wordpress mx-auto"></div>
+                                <h4>Wordpress</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Básico">
+                                <div class="bg-seo mx-auto"></div>
+                                <h4>SEO</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Intermedio">
+                                <div class="bg-mailing mx-auto"></div>
+                                <h4>Mailing</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 50%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Avanzado">
+                                <div class="bg-office mx-auto"></div>
+                                <h4>Office</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 75%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Técnico de reparación de equipos informáticos">
+                                <div class="bg-reparaciones mx-auto"></div>
+                                <h4>IT Informático</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Permiso B">
+                                <div class="bg-carnetb mx-auto"></div>
+                                <h4>Permiso conducir</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-sm-6 skills" data-toggle="tooltip" data-placement="bottom" title="Todas y más!">
+                                <div class="bg-mas mx-auto"></div>
+                                <h4>Ganas de aprender</h4>
+                                <div class="progress">
+                                    <div class="progress-bar bg-main" role="progressbar" style="width: 100%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="gap"></div>
+                    <a class="btn btn-light text-uppercase font-weight-bold bg-main" data-toggle="collapse" href="#skillsextra" role="button" aria-expanded="false">Más Habilidades</a>
+                </div>
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div id="portfolio">
+            <div class="container-fluid">
+                <h2 class="text-uppercase text-center titulo">Portfolio</h2>
+                <div class="gap"></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <img src="./assets/img/casashanghai.jpg" class="img-fluid mb-4" alt="casashanghai">
+                        <img src="./assets/img/prolaundry.png" class="img-fluid mb-4" alt="prolaundry">
+                        <img src="./assets/img/majestic.jpg" class="img-fluid mb-4" alt="prolaundry">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/espaivisual.jpg" class="img-fluid mb-4" alt="espaivisual">
+                        <img src="./assets/img/artmatic.jpg" class="img-fluid mb-4" alt="artmatic">
+                        <img src="./assets/img/midmost.jpg" class="img-fluid mb-4" alt="artmatic">
+                    </div>
+                    <div class="col-md-4">
+                        <img src="./assets/img/transportista.jpg" class="img-fluid mb-4" alt="transportista barcelona">
+                        <img src="./assets/img/zwilling.jpg" class="img-fluid mb-4" alt="zwilling landing">
+                        <img src="./assets/img/mimsitges.jpg" class="img-fluid mb-4" alt="zwilling landing">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Zona Modal Formación...................................................-->
+        <div class="modal fade" id="fweb" tabindex="-1" role="dialog" aria-labelledby="weblabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="weblabel">Confección y publicación de páginas webs</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Nivel: Certificado profesional grado 2 (Grado Medio)</li>
+                            <li>Centro: CE Jaume Balmes</li>
+                            <li>Ubicación: Hospitalet de Llobregat</li>
+                            <li>Año: 2017</li>
+                            <li>Conocimientos:
+                                <ul>
+                                    <li>Maquetación <b>HTML</b></li>
+                                    <li>Diseño de hojas de estilo <b>CSS</b></li>
+                                    <li>Programación <b>Javascript</b></li>
+                                    <li>Diseño gráfico</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fandroid" tabindex="-1" role="dialog" aria-labelledby="androidlabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="androidlabel">Cómo crear aplicaciones para móvil</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Nivel: Formación complementaria</li>
+                            <li>Centro: Barcelona Activa</li>
+                            <li>Ubicación: Barcelona</li>
+                            <li>Año: 2016</li>
+                            <li>Conocimientos:
+                                <ul>
+                                    <li>Creación de una aplicación sencilla para Android con <b>Eclipse</b></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fdiseno" tabindex="-1" role="dialog" aria-labelledby="disenolabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="disenolabel">Diseño gráfico y autoedición</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Nivel: Formación Profesional Ocupacional</li>
+                            <li>Centro: Federación Onubense de Empresarios (FOE)</li>
+                            <li>Ubicación: Huelva</li>
+                            <li>Año: 2012</li>
+                            <li>Conocimientos:
+                                <ul>
+                                    <li>Formación teórica del diseño</li>
+                                    <li>Edición de imágenes en <b>Photoshop</b></li>
+                                    <li>Ilustración vectorial con <b>Illustrator</b></li>
+                                    <li>Maquetación digital con <b>Indesign</b></li>
+                                    <li>Pre-impresión</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fesi" tabindex="-1" role="dialog" aria-labelledby="esilabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="esilabel">Explotación de sistemas informáticos</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Nivel: Formación profesional de Grado Medio</li>
+                            <li>Centro: IES San sebastián</li>
+                            <li>Ubicación: Huelva</li>
+                            <li>Año: 2011</li>
+                            <li>Conocimientos:
+                                <ul>
+                                    <li>Reparación de equipos informáticos</li>
+                                    <li>Configuración de redes</li>
+                                    <li>Mantenimiento de servidores</li>
+                                    <li>Gestión de bases de datos</li>
+                                    <li>Administración de sistemas</li>
+                                    <li>Ofimática</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Zona Modal Experiencia....................................................-->
+        <div class="modal fade" id="emhg" tabindex="-1" role="dialog" aria-labelledby="iwsblabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="iwsblabel">Majestic Hotel Group (MHG)</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Cargo: Web Developer & UX Designer</li>
+                            <li>Empresa: Majestic Hotel Group (MHG)</li>
+                            <li>Ubicación: Barcelona</li>
+                            <li>Año: 2021</li>
+                            <li>Competencias:
+                                <ul>
+                                    <li>Diseño Web</li>
+                                    <li>Diseño gráfico</li>
+                                    <li>Investigación de tecnologías web</li>
+                                    <li>Implementación de Google AMP</li>
+                                    <li>Mantenimiento de webs</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="eiwsb" tabindex="-1" role="dialog" aria-labelledby="iwsblabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="iwsblabel">Indian Webs</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Cargo: Webmaster</li>
+                            <li>Empresa: Indian Webs</li>
+                            <li>Ubicación: Sant Boi</li>
+                            <li>Año: 2018</li>
+                            <li>Competencias:
+                                <ul>
+                                    <li>Diseño Web</li>
+                                    <li>Diseño gráfico</li>
+                                    <li>Mantenimiento de webs</li>
+                                    <li>Posicionamiento Web SEO</li>
+                                    <li>Social Media</li>
+                                    <li>Gestión de CMS</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="eiwh" tabindex="-1" role="dialog" aria-labelledby="iwhlabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="iwhlabel">Indian Webs</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Cargo: Alumno en prácticas</li>
+                            <li>Empresa: Indian Webs</li>
+                            <li>Ubicación: Hospitalet de Llobregat</li>
+                            <li>Año: 2017</li>
+                            <li>Competencias:
+                                <ul>
+                                    <li>Diseño Web</li>
+                                    <li>Diseño gráfico</li>
+                                    <li>Gestión de CMS</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="emineco" tabindex="-1" role="dialog" aria-labelledby="minecolabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="minecolabel">Ministerio de Economía</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Cargo: Gestor de archivos</li>
+                            <li>Empresa: Ministerio de Economía y Competitividad</li>
+                            <li>Ubicación: Madrid</li>
+                            <li>Año: 2015</li>
+                            <li>Competencias:
+                                <ul>
+                                    <li>Gestión de informes</li>
+                                    <li>Archivado de expedientes</li>
+                                    <li>Responsable de etiquetar y archivar todos los expedientes del 2000 - 2010</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="ediseno" tabindex="-1" role="dialog" aria-labelledby="rotulabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="rotulabel">Diseño en Rotula</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Cargo: Alumno en prácticas</li>
+                            <li>Empresa: Rotula</li>
+                            <li>Ubicación: Huelva</li>
+                            <li>Año: 2012</li>
+                            <li>Competencias:
+                                <ul>
+                                    <li>Edición de imágenes</li>
+                                    <li>Creación de logotipos</li>
+                                    <li>Ilustraciones para vinilos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="efete" tabindex="-1" role="dialog" aria-labelledby="fetelabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content bg-dark text-light">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="fetelabel">Técnico informático en FETE UGT</h4>
+                        <button type="button" class="close text-light" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        <ul>
+                            <li>Cargo: Alumno en prácticas</li>
+                            <li>Empresa: FETE UGT</li>
+                            <li>Ubicación: Huelva</li>
+                            <li>Año: 2011</li>
+                            <li>Competencias:
+                                <ul>
+                                    <li>Gestión de bases de datos</li>
+                                    <li>Reparación de equipos informáticos</li>
+                                    <li>Mantenimiento de equipos informáticos</li>
+                                    <li>Administración de archivos</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class=" d-flex align-items-center">
+        <div class="container text-light text-center">
+            Web creada por Luis Javier Cano Benítez &copy; 2018
+        </div>
+    </footer>
+
+</body>
+
+</html>

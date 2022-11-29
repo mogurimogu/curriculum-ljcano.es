@@ -3,99 +3,94 @@
   background-repeat: no-repeat;
   background-image: url(../img/sprite.svg);
 }
-.icon-catalonian {
+.icon-icons8-mongodb {
   width: 70px;
   height: 70px;
   background-position: 0 0;
 }
-.icon-spanish {
-  width: 70px;
+.icon-react {
+  width: 77px;
   height: 70px;
   background-position: 0 -70px;
-}
-.icon-english {
-  width: 70px;
-  height: 70px;
-  background-position: 0 -140px;
 }
 .icon-it {
   width: 70px;
   height: 70px;
-  background-position: 0 -210px;
+  background-position: 0 -140px;
 }
 .icon-seo {
   width: 70px;
   height: 70px;
-  background-position: 0 -280px;
+  background-position: 0 -210px;
 }
 .icon-more {
   width: 70px;
   height: 70px;
-  background-position: 0 -350px;
+  background-position: 0 -280px;
 }
 .icon-photoshop {
   width: 70px;
   height: 70px;
-  background-position: 0 -420px;
+  background-position: 0 -350px;
 }
 .icon-illustrator {
   width: 70px;
   height: 70px;
-  background-position: 0 -490px;
+  background-position: 0 -420px;
 }
 .icon-indesign {
   width: 70px;
   height: 70px;
-  background-position: 0 -560px;
+  background-position: 0 -490px;
 }
 .icon-wordpress {
   width: 70px;
   height: 70px;
-  background-position: 0 -630px;
+  background-position: 0 -560px;
 }
 .icon-amp {
   width: 70px;
   height: 70px;
-  background-position: 0 -700px;
+  background-position: 0 -630px;
 }
 .icon-jquery {
   width: 70px;
   height: 70px;
-  background-position: 0 -770px;
+  background-position: 0 -700px;
 }
 .icon-javascript {
   width: 70px;
   height: 70px;
-  background-position: 0 -840px;
+  background-position: 0 -770px;
 }
 .icon-nodejs {
   width: 64px;
   height: 70px;
-  background-position: 0 -910px;
+  background-position: 0 -840px;
 }
 .icon-sass {
   width: 70px;
   height: 70px;
-  background-position: 0 -980px;
+  background-position: 0 -910px;
 }
 .icon-html-5 {
   width: 70px;
   height: 70px;
-  background-position: 0 -1050px;
+  background-position: 0 -980px;
 }
 .icon-css-3 {
   width: 70px;
   height: 70px;
-  background-position: 0 -1120px;
+  background-position: 0 -1050px;
 }
 .icon-ux-design {
   width: 70px;
   height: 70px;
-  background-position: 0 -1190px;
+  background-position: 0 -1120px;
 }
 .icon-github {
   width: 70px;
   height: 70px;
-  background-position: 0 -1260px;
+  background-position: 0 -1190px;
 }
 
